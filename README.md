@@ -29,4 +29,5 @@ To run the Project on Cheaha
     •	Number of CPU: 1\
     •	Memory per CPU (GB): 32
     
-3.	**Run any of the Jupyter Notebook files.** If needed, the !pip install requirements.txt is included in the files.
+3. **Download the dataset.**	
+4. **Run any of the Jupyter Notebook files.** If needed, the !pip install requirements.txt is included in the files.
