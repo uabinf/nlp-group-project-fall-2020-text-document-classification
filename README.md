@@ -1,11 +1,13 @@
 # Text-Document-Classification
 
+For our project we wanted to explore the classification of long text documents using various methods.
 
+The dataset we used was a fake news dataset from Kaggle.
 
 
 # Download the dataset:
-1. Go to your kaggle account, click on account and scroll to API section and click Expire API Token to remove previous tokens. 
-2. Click on Create New API Token - It will download kaggle.json file on your machine.
+1. Go to your kaggle account, click on account and scroll to API section and click "Expire API Token" to remove previous tokens. 
+2. Click on "Create New API Token" - it will download kaggle.json to your machine.
 3. Move the downloaded kaggle.json to the /notebooks directory
 4. Run dowload_from_kaggle.ipynb. It contain shell commands that can be run from the shell
 
