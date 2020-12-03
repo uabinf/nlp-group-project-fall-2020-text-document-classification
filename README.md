@@ -2,7 +2,7 @@
 
 For our project we wanted to explore the classification of long text documents using various methods.
 
-The dataset we used was a fake news dataset from Kaggle.
+The dataset we used was a fake news dataset from kaggle.
 
 
 # Download the dataset:
