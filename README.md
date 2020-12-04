@@ -33,7 +33,7 @@ To run the Project on Cheaha
     •	Number of CPU: 1\
     •	Memory per CPU (GB): 32
 
-    *Additional Setup (LSTM):*\
+    *Additional Setup (LSTM - could not get it to run on GPU :():*\
     •	Partition: short\
     •	Number of CPU: 16\
     •	Memory per CPU (GB): 16
