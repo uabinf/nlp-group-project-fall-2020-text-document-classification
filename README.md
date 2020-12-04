@@ -39,4 +39,4 @@ To run the Project on Cheaha
     •	Memory per CPU (GB): 16
     
 3. **Run notebooks 1-3 in sequence. (You may skip notebook 3_dataset_exploration.ipynb.)**
-4. **Run any of the Jupyter Notebook files.** If needed, the !pip install requirements.txt is included in the files.
+4. **Run any of the Jupyter Notebook files.** If needed, the !pip install requirements.txt is included in the main directory.
