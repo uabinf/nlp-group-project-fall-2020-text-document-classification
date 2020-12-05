@@ -10,7 +10,7 @@ This project consists of 2 Phases.
 - Fine tune [RoBERTa](https://arxiv.org/pdf/1907.11692.pdf) ✅
 **Phase2: Overcome the limited sequence length**
 - Fine tune [Longformer](https://arxiv.org/pdf/2004.05150.pdf) (base 4096) ✅
-- Recurrence over BERT [RoBERT](https://arxiv.org/abs/1910.10781). Not successful yet.
+- Recurrence over BERT ([RoBERT](https://arxiv.org/abs/1910.10781)). Not successful yet.
 
 Thanks to the hugging face libraries, we were able to design this project in such a way that it can be used to fine-tune BERT (and other similar models like RoBERTa) for any document classification problem (binary or multi-class including sentiment analysis) on various datasets with only minor changes necessary - just change the model from the config cell and adjust the dataset preprocessing cell. Please check notebooks/Fine_tuning_BERT_for_DC_seqLen512.ipynb for more details.
 
@@ -22,7 +22,7 @@ We fine-tuned BERT, RoBERTa, and Longformers to classify Fake/Real news from thi
 However, we found duplicate entries at the end of the project that affected the result. The experiment results after removing duplicates were 96.92, 99.34, 99.56 accuracy and 93.85, 98.68, 99.12 MCC.
 
 **Post-Presentation**
-Finally, we added a second Kaggle fake news dataset (which brought total rows from 6k to 25k) but the results only changed slightly.
+Finally, we added a second Kaggle fake news dataset (which brought total rows from 6k to 25k), but the results only changed slightly.
 
 # Data
 The data we chose comprises two fake news dataset from Kaggle.
