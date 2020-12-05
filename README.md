@@ -2,11 +2,33 @@
 
 For our project we wanted to explore the classification of long text documents using various methods.
 
-The data we chose comprises two fake news dataset from kaggle.
+# Introduction.
+This project consists of 2 Phases.
+**Phase1: Test Preliminary Models**
+- Long short-term memory (LSTM) ✅
+- Fine tune [BERT](https://arxiv.org/pdf/1810.04805.pdf) ✅
+- Fine tune [RoBERTa](https://arxiv.org/pdf/1907.11692.pdf) ✅
+**Phase2: Overcome the limited sequence length**
+- Fine tune [Longformer](https://arxiv.org/pdf/2004.05150.pdf) (base 4096) ✅
+- Recurrence over BERT [RoBERT](https://arxiv.org/abs/1910.10781). Not successful yet.
 
+Thanks to the hugging face libraries, we were able to design this project in such a way that it can be used to fine-tune BERT (and other similar models like RoBERTa) for any document classification problem (binary or multi-class including sentiment analysis) on various datasets with only minor changes necessary - just change the model from the config cell and adjust the dataset preprocessing cell. Please check notebooks/Fine_tuning_BERT_for_DC_seqLen512.ipynb for more details.
+
+We mainly used **Python, Transformers, Pytorch, Sklearn, Tensorflow, and Gensim**.
+
+# Experiment and Result
+
+We fine-tuned BERT, RoBERTa, and Longformers to classify Fake/Real news from this dataset from Kaggle. We reached 98.74%, 99.79%, and 100% accuracy and 97.48, 99.58, and 100 MCC for these three models, respectively.
+However, we found duplicate entries at the end of the project that affected the result. The experiment results after removing duplicates were 96.92, 99.34, 99.56 accuracy and 93.85, 98.68, 99.12 MCC.
+
+**Post-Presentation**
+Finally, we added a second Kaggle fake news dataset (which brought total rows from 6k to 25k) but the results only changed slightly.
+
+# Data
+The data we chose comprises two fake news dataset from Kaggle.
 
 # Download the dataset:
-1. Go to your kaggle account, click on account and scroll to API section and click "Expire API Token" to remove previous tokens. 
+1. Go to your Kaggle account, click on account and scroll to API section and click "Expire API Token" to remove previous tokens. 
 2. Click on "Create New API Token" - it will download kaggle.json to your machine.
 3. Move the downloaded kaggle.json to the /notebooks directory
 4. Run dowload_from_kaggle.ipynb. It contain shell commands that can be run from the shell
