@@ -18,11 +18,11 @@ We mainly used **Python, Transformers, Pytorch, and Sklearn (plus Tensorflow and
 
 # Experiment and Result
 
-We fine-tuned BERT, RoBERTa, and Longformers to classify Fake/Real news from this dataset from Kaggle. We reached 98.74%, 99.79%, and 100% accuracy and 97.48%, 99.58%, and 100% MCC for these three models, respectively.
+We fine-tuned BERT, RoBERTa, and Longformers to classify fake/real news from this dataset from Kaggle. We reached 98.74%, 99.79%, and 100% accuracy and 97.48%, 99.58%, and 100% MCC for these three models, respectively.
 However, we found duplicate entries at the end of the project that affected the result. The experiment results after removing duplicates were 96.92%, 99.34%, 99.56% accuracy and 93.85%, 98.68%, 99.12% MCC.
 
 **Post-Presentation**
-Finally, we added a second Kaggle fake news dataset (which brought total rows from 6k to 25k), but the results only changed slightly (except for LSTM, which improved significantly).
+Finally, we added a second Kaggle fake news dataset (which brought total rows from 6k to 25k), but the results only changed slightly (except for LSTM, which improved significantly, but still underperformed the other models).
 
 # Data
 The data we chose comprises two fake news dataset from Kaggle.
